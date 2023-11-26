@@ -1,0 +1,22 @@
+### Get Todos
+GET http://localhost:1000/api/todos HTTP/1.1
+
+### Create Todo
+POST http://localhost:1000/api/todos HTTP/1.1
+content-type: application/json
+
+{
+    "text": "Just Text Todo Item"
+}
+
+### Update Todo
+PUT http://localhost:1000/api/todos/65285e574ac8bae78ca9c22c HTTP/1.1
+content-type: application/json
+
+{
+    "text":"Updated Todo Item Name"
+}
+
+
+### Delete Todo
+DELETE http://localhost:1000/api/todos/65285e684ac8bae78ca9c22f HTTP/1.1
