@@ -27,5 +27,5 @@ app.use(logger)
 app.use('/api/todos', todoRoutes)
 
 // start server and listen for request
-const port: string|number = process.env.PORT || 999
+const port: string|number = process.env.PORT || 1999
 app.listen(port, () => console.log(`listening for request at: http://localhost:${port}`))
