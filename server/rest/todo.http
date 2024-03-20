@@ -1,0 +1,21 @@
+### Get All Todos
+GET http://localhost:2000/api/todos HTTP/1.1
+
+### Add New Todo
+POST http://localhost:2000/api/todos HTTP/1.1
+Content-Type: application/json
+
+{
+    "text": "Test Todo",
+}
+
+### Edit Todos By Id
+PUT http://localhost:2000/api/todos/65f93af86f170d62e1272905 HTTP/1.1
+Content-Type: application/json
+
+{
+    "text": "Test Todo (edited)"
+}
+
+### Remove Todos By Id
+DELETE  http://localhost:2000/api/todos/65f951205f1ca0bb5ed00bb4 HTTP/1.1
